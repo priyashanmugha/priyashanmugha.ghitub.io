@@ -20,10 +20,10 @@ body {
   height: 150px;
 }
 #logo {
+  position: fixed;
+  top: 0;
   border-radius: 100%;
-  width: 150px;
-  margin-top: 30px;
-  margin-left: 0;
+  width: 100px;
 }
 /*#side {
   position: fixed;
@@ -75,7 +75,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
   gap: 100px;
 }
 /*image position*/
@@ -123,13 +123,13 @@ section.about-me {
   background-repeat: no-repeat;
 }
 #motivation {
+  width: 100%;
+  min-height: 200px;
   display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  justify-content: space-around;
 }
 .reading {
-  width: 200px;
+  width: 300px;
   border-radius: 100%;
 }
 .about-me h1 {
@@ -215,6 +215,10 @@ section.about-me {
   background-color: #ddb8a6;
   height: 500px;
   line-height: 500px;
+}
+#project-btn {
+  width:100px;
+  height:50px;
 }
 .loader {
   width: 50px;
