@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les formulaires</title>
+    <link rel="stylesheet" type="text/css" href="test code/style.css"><!-- ici est effectué le lien entre la page html/css via le dossier racine Test code de moon bureau-->
+</head>
+<body>
+        <h1>Les formulaires</h1>
+    <form method="post" action="traitement.php"><!-- la valeur php est le langage de programmation qui va perrmettre de traiter les données transmises par l'utilisateur et les relier à chaque champs du formulaire, c'est quand on a beaucoup de données recueillis le plus souvent-->
+                                                <!--l'attribut method va permettre le traitement des données la valeur par ddéfaut est get qui va ajouter toutes les données à l'url de la page, les site comme google utilise get pour toout ce qui est moteur de recherche pour avoir les mots clés au niveau de l'url-->
+                                                <!-- l'attribut action permet de savoir où on envoie les info-->
+                                                 <!-- on peut aussi utiliser l'attribut autocomplete qd on veut que la page garde en mémoire et donne des suggestions automatiques la valeur sera ON ou OFF-->
+        <p><label for="prenom">Nom</label>
+            <input type="text" id="prenom" name="username" placeholder="Entrez votre Nom"></p><!-- les attributs for et id on tjrs la même valeur, ici pas besoin de la souris pour remplir le formulaire, clavier suiffit :le focus est directement fait sur le champs de saisie du formulaire, ce qui est très pratique pour ce qui n'utilise pas la souris-->
+                                                                                            <!-- en option:la balise p permet par ligne peut par la suite permettre de mettre en forme avec css-->
+                                                                                            <!-- l'attribut placeholder permet d'indiquer un texte par défaut dans le champs à compléter pour donner des consignes-->
+                                                                                            <!-- l'attribut type est le plus important il indique la nature de l'information demandée à l'utilisateur sa valeur est donc inombrable, les principales sont= text, date, password (les caractères sont alors masqués)-->
+             <input type="reset" value="Effacer">                                       <!--ces attributs permettent de corriger avant envoi du formulaire -->
+             <input type="submit" name="se connecter">                                       <!-- pour créer les champs d'envoi, de validation-->
+        <p>Publier la news?<input type="checkbox"  name="publishnews"</p><!-- la valeur checkbox permet de créer une case à cocher optionnelle-->
+Votre choix <input type="radio" name="choice" >oui <input type="radio" name="choice">non    <!-- pour cocher des cases obligatoires ici on créer des bouton radio et les attributs name ont la même valeur choice, ainsi on peut cocher oui ou non-->
+            
+            <input type="date" name="fieldform">                                        <!--le format de la date s'affichee différemment selon le navigateur-->
+            <input type="datetime-local" name="fieldform">                              <!--affichee l'heure locale avec la date-->
+            <input type="search" name="fieldform"><br>                                  <!--pour créer un moteur de recherche sur le site-->
+            <input type="range" name="fieldform" min="0" max="18" step="5"><br>                  <!--pour créer un curseur de niveau avec une valeur minimale et max, l'attribut step permet de graduer de 5 en 5-->
+
+   
+</form>
+</body>
+</html>
