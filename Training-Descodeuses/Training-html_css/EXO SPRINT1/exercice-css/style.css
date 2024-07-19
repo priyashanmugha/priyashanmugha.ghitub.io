@@ -1,0 +1,21 @@
+
+*{
+    .bloc{
+        width: 200px;
+        height: 200px;
+        border:solid;
+    }
+
+ #color orange{
+    background-color: orange;
+ }   
+ #color blue{
+background-color: blue;
+ }
+ .text{
+    font-size: 30px;
+    color: orange;
+ }
+
+}
+   

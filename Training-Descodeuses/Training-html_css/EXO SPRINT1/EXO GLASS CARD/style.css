@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+            width: 100%;
+            height: 100vh;
+            background-color:aqua;
+            align-content: center;
+                      }
+
+ .card             {
+                    width: 400px;
+                    height: 300px;
+                    border-radius: 20px;
+                    border:solid white;
+                    position: relative;
+                    z-index:0;
+                    margin: 20%;
+
+                   }
+
+.credit        {
+                width: 100%;
+                height: 100%;
+                background-color:pink;
+                border-radius: 20px;
+                position:absolute;
+                z-index:3;
+                filter: blur(70px);
+               }
+
+.roundleft {
+            width: 80px ;
+            height: 80px;
+            background-color:lightgreen;
+            border-radius:100%;
+            filter: blur(7px);
+            position:absolute;
+            top: -25px;
+            left:-25px;
+            z-index:2;
+           
+            }
+.roundright    {
+                width: 80px;
+                height: 80px;
+                background-color: lightyellow;
+                border-radius:100%;
+                filter: blur(7px);
+                position: absolute;
+                right: -25px;
+                bottom:-25px;
+                z-index:2;
+                }

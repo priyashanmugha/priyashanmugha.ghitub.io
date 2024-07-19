@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+}
+        /* le container pemet de fixer la marge du site pour ne pas qu'elle bouge lorsqu'on change de taille d'ecran exemple du pc au mobile*/
+.container {
+            max-width: 1000px;/* la valeur maximum d'un container est 1280px */
+            margin: 0%;
+            }
+.bloc   {
+        width: 200px;
+       height: 200px;
+       background-color:blueviolet;
+       border: solid 2px rgb(230, 22, 137);
+        }
+        /* ici on a appelé les div qui ont la même valeur de class*/
+        /*qaund on appel une nav pas besooion du point car balise semantique, si c'était une div avec class nav on aurait mis .nav*/
+nav    {
+        width: 100vw;
+        height: 10vh;
+        background-color: coral;
+        }
+        .enfant{
+            width: 50%;
+            height: 100%;
+            background-color: aquamarine;
+        }
+p {
+background-color: purple;
+color: white;
+padding: 2em;
+/* fot-size: 5rem; padding:2em;*/
+/* unité rem pour les textes et em c'est la taille de l'élément par rapport a la div parent, si on change la taille du texte la taille de la div qui la contient change aussi donc pour le pading utiliser le em*/
+        }
+        /* le pourcentage de px est par rapport a la div parent qui ici est nav*/
+.bulle {
+        border-radius: 100%;
+        }
+
+        /* pour appeler un seul element on utilise l'id*/

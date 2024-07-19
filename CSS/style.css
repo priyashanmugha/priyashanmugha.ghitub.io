@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  background: #989e8b;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+}
+#logo {
+  border-radius: 100%;
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+/*#side {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+} pour fixer la nav bar sur le côte droit*/
+
+.menu {
+  margin-top: 30px;
+  margin-right: 30px;
+  position: fixed;
+  top: 0;
+  border-radius: 10px 0;
+  right: 0;
+  /*background-color:
+  #f5f5f557;*/
+}
+
+.nav-links ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 0.5s;
+}
+.nav-links ul li a:hover {
+  color: #ddb8a6;
+}
+/*header button*/
+.btn {
+  background-color: #ddb8a6;
+  color: white;
+  padding: 14px 27px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.btn :hover {
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+/*main container size*/
+.container {
+  width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 100px;
+}
+/*image position*/
+.image {
+  border-radius: 70px 0 70px 0;
+  overflow: hidden;
+}
+#femme {
+  width: 600px;
+  height: 600px;
+  border-radius: 70px 0 70px 0;
+}
+
+/* position of presentation-text*/
+.presentation-text {
+  width: 600px;
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border: solid white;
+  border-radius: 0 70px 0 70px;
+}
+.name {
+  text-transform: uppercase;
+  font-size: 50px;
+  align-self: center;
+  margin-top: 1.12em;
+  margin-bottom: 1.12em;
+}
+.welcome {
+  align-self: center;
+}
+.intro {
+  font-size: 16px;
+  margin-top: 1.12em;
+  text-align: center;
+}
+section.about-me {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-two {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+}
+/*animation: slide 3s forwards; left: 0; pour content et right: 0; pour skill */
+
+/*conten-box et skill-box taille identique position symetrique*/
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+}
+.box {
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+}
+
+#cursus {
+  width: 50%;
+  height: 250px;
+  background-color: #d49b7e;
+  border: solid white;
+  border-radius: 70px 0;
+}
+.cv-link {
+  color: white;
+  text-decoration: none; /*supprime le surlignement*/
+  font-weight: bold;
+}
+.cv-link:hover {
+  text-decoration: underline; /*ajoute surlignement au survol*/
+}
+
+#software {
+  width: 50%;
+  height: 250px;
+  align-self: flex-end;
+  background-color: #ddb8a6;
+  border: solid white;
+  border-radius: 70px 0;
+}
+
+#creative {
+  width: 50%;
+  height: 250px;
+  align-self: flex-start;
+  background-color: #ddb8a6;
+  border: solid white;
+  border-radius: 0 70px;
+}
+
+#hobby {
+  width: 50%;
+  height: 250px;
+  align-self: flex-end;
+  background-color: #d49b7e;
+  border: solid white;
+  border-radius: 0 70px;
+}
+section.project {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.screan {
+  width: ;
+  height: ;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.coming,
+.soon {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: slide 3s forwards;
+}
+.coming {
+  left: 0;
+}
+.soon {
+  right: 0;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/logo-portfolio-png.png);
+  background-size: cover;
+  background-position: center;
+  z-index:-1;
+}
+.coming h1 {
+  font-size: 60px;
+  color: black;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

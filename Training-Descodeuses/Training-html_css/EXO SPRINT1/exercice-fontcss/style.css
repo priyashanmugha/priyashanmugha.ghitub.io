@@ -1,0 +1,22 @@
+*{
+  margin: 0;  
+}
+.ecran{
+    width: 200vw;
+    height: 200vh;
+}
+.petit{
+    width: 40%;
+    height: 50%;
+    background-color: green;
+}
+#colorp{
+    background-color: pink;
+}
+#colory{
+    background-color: yellow;
+}
+.petit p{
+    color: white;
+    text-align: center;
+}
